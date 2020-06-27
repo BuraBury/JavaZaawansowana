@@ -1,9 +1,11 @@
-package com.burabury.zdjavapol12_advanced;
+package months;
 
-public class UnsupportedMonthException extends RuntimeException {
+public class UnsupportedMonthException extends IndexOutOfBoundsException {
 
     public UnsupportedMonthException(int number) {
         super("Error occured while parsing " + number + " to Month");
     }
+
+
 
 }

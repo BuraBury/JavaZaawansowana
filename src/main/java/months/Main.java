@@ -1,6 +1,6 @@
-package zadanie_wyjatki_1;
+package months;
 
-import static zadanie_wyjatki_1.Months.showMonthByNumber;
+import static months.Months.showMonthByNumber;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,13 +17,10 @@ public class Main {
         Months november = Months.NOVEMBER;
         Months december = Months.DECEMBER;
 
-        showMonthByNumber(20);
-
-
+        showMonthByNumber(10);
 
 
     }
-
 
 
 }

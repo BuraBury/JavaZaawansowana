@@ -1,4 +1,4 @@
-package Zadanie1;
+package days_of_week;
 
 public class DaysDemo {
 

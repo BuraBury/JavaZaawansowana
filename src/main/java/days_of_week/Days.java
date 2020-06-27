@@ -1,4 +1,4 @@
-package Zadanie1;
+package days_of_week;
 
 public enum Days {
     MONDAY(),
@@ -24,6 +24,8 @@ public enum Days {
             return "Go to work";
         }
     }
+
+
 
 }
 

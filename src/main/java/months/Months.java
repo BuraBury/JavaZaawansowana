@@ -1,6 +1,4 @@
-package zadanie_wyjatki_1;
-
-import com.burabury.zdjavapol12_advanced.UnsupportedMonthException;
+package months;
 
 public enum Months {
     JANUARY(),
@@ -18,11 +16,12 @@ public enum Months {
 
     public static void showMonthByNumber(int number) {
         try {
-            System.out.println(Months.values()[number - 1]);
-        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(Months.values()[number-1]);
+        } catch (IndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
         }
     }
+
 
 
 }
