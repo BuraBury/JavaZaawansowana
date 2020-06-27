@@ -1,6 +1,6 @@
 package Zadanie1;
 
-public enum Enums {
+public enum Days {
     MONDAY(),
     TUESDAY(),
     WEDNESDAY(),
