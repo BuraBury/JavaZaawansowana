@@ -3,6 +3,20 @@ package Zadanie1;
 import java.util.EnumSet;
 
 public class Main {
+    Enums saturday = Enums.valueOf("SATURDAY");
+
+    public void isGreaterThanSaturday(Enum day) {
+        int a = day.compareTo(saturday);
+
+        if (a == 0) {
+            System.out.println("Its saturday");
+        } else if (a < 0) {
+            System.out.println("Its before Saturday");
+        } else {
+            System.out.println("Its after saturday");
+        }
+
+    }
     public static void main(String[] args) {
 
         Enums monday = Enums.MONDAY;
@@ -18,6 +32,9 @@ public class Main {
         for (Enums d : days) {
             System.out.println(d.testDay());
         }
+
+
+
 
     }
 }
