@@ -44,9 +44,11 @@ public class EnumMain {
         Set<Seasons> set = EnumSet.allOf(Seasons.class);
         System.out.println(set);
 
-        System.out.println();
+        System.out.println(Seasons.values()[1].getDaysCounterForYear(2020));
 
-        System.out.println(summer.getDaysCounter() + spring.getDaysCounter() + winter.getDaysCounter() + fall.getDaysCounter());
+
+        Seasons wiosna = Seasons.fromPolishTranslation("Wiosna");
+        System.out.println(wiosna);
 
 
     }
