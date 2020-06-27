@@ -2,7 +2,7 @@ package Zadanie1;
 
 public class DaysDemo {
 
-    public static void isGreaterThanSaturday(Enum<Days> day) {
+    public static void isGreaterThanSaturday(Days day) {
         int a = day.compareTo(Days.SATURDAY);
 
         if (a == 0) {
@@ -34,6 +34,7 @@ public class DaysDemo {
         isGreaterThanSaturday(thursday);
         isGreaterThanSaturday(sunday);
         isGreaterThanSaturday(saturday);
+
 
     }
 
