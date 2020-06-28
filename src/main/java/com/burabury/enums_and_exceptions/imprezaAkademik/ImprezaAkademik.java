@@ -7,9 +7,7 @@ public class ImprezaAkademik {
     public void party(int drunkLevel) throws HangoverException {
         if (drunkLevel < 5) {
             throw new UnsupportedOperationException();
-
         } else if (drunkLevel < 10) {
-
         } else if (drunkLevel < 20) {
             throw new HangoverException();
         } else if (drunkLevel < 30) {
@@ -27,6 +25,9 @@ public class ImprezaAkademik {
     public static void main(String[] args) {
 
         ImprezaAkademik impreza = new ImprezaAkademik();
+
+//        Object imprezaObiektowa = new ImprezaAkademik();
+//        ImprezaAkademik imprezka = (ImprezaAkademik) imprezaObiektowa;
 
         Random random = new Random();
         int drunkLevel = random.nextInt(55);
