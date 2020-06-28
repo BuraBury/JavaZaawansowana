@@ -5,16 +5,18 @@ import java.util.Objects;
 public class Ssak extends Zwierze {
     String name;
 
-    Ssak(){}
+    Ssak() {
+    }
 
     Ssak(String name) {
         this.name = name;
     }
 
+
+    @Override
     public void wydajDzwiek() {
         System.out.println("Kazdy ssak ma swoj glos");
     }
-
 
     @Override
     public boolean equals(Object o) {

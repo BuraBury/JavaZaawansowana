@@ -17,5 +17,4 @@ public class Zwierze implements Zachowania {
     }
 
 
-
 }
