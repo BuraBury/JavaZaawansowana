@@ -1,7 +1,4 @@
-package months;
-
-import static months.Months.ofNumber;
-import static months.Months.showMonthByNumber;
+package com.burabury.enums_and_exceptions.months;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,11 +15,11 @@ public class Main {
         Months november = Months.NOVEMBER;
         Months december = Months.DECEMBER;
 
-        System.out.println(ofNumber(13));
+        System.out.println(Months.ofNumber(13));
 
         int number = 15;
         try {
-            ofNumber(number);
+            Months.ofNumber(number);
         } catch (UnsupportedMonthException e){
         throw new UnsupportedMonthException(number);
         }

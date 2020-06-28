@@ -1,4 +1,4 @@
-package months;
+package com.burabury.enums_and_exceptions.months;
 
 public class UnsupportedMonthException extends RuntimeException {
 
