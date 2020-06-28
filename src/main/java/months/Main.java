@@ -1,6 +1,7 @@
 package months;
 
 import static months.Months.ofNumber;
+import static months.Months.showMonthByNumber;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +18,14 @@ public class Main {
         Months november = Months.NOVEMBER;
         Months december = Months.DECEMBER;
 
-        System.out.println(ofNumber(15));
+        //System.out.println(ofNumber(15));
+
+        int number = 15;
+        try {
+            showMonthByNumber(number);
+        } catch (UnsupportedMonthException e){
+        throw new UnsupportedMonthException(number);
+        }
 
 
     }

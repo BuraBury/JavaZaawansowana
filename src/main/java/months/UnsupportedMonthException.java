@@ -4,6 +4,10 @@ public class UnsupportedMonthException extends RuntimeException {
 
     int invalidMonth;
 
+    UnsupportedMonthException() {
+        this.invalidMonth = invalidMonth;
+    }
+
     public int getInvalidMonthNumber() {
         return invalidMonth;
     }
