@@ -20,11 +20,10 @@ public class MainZwierzeta {
         Zwierze gad1 = new Gad();
 
         ssaczek.metodaDomyslna();
-
-
         zwierze.jedz();
         ssaczek.jedz();
-        System.out.println(ssaczek.przemieszczajSie(5));
+        System.out.println(ssaczek.przemieszczajSie(5) + " " + ssaczek.getClass().getSimpleName());
+        System.out.println(gad.przemieszczajSie(10) + " " + gad.getClass().getSimpleName());
         ssaczek.wydajDzwiek();
         gad.jedz();
     }

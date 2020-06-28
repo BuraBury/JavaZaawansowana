@@ -2,7 +2,7 @@ package com.zwierzeta;
 
 public interface Zachowania {
 
-    int field = 10; //interface moze miec zdefiniowane pola, są stałe - PUBLIC FINAL STATIC
+  // int field = 10; interface moze miec zdefiniowane pola, są stałe - PUBLIC FINAL STATIC
 
     void jedz();
 
