@@ -18,11 +18,11 @@ public class Main {
         Months november = Months.NOVEMBER;
         Months december = Months.DECEMBER;
 
-        //System.out.println(ofNumber(15));
+        System.out.println(ofNumber(13));
 
         int number = 15;
         try {
-            showMonthByNumber(number);
+            ofNumber(number);
         } catch (UnsupportedMonthException e){
         throw new UnsupportedMonthException(number);
         }
