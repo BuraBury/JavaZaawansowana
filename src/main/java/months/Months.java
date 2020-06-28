@@ -14,14 +14,26 @@ public enum Months {
     NOVEMBER(),
     DECEMBER();
 
-    public static void showMonthByNumber(int number) {
-        try {
-            System.out.println(Months.values()[number-1]);
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println(e.getMessage());
-        }
+    int ordinalNumber;
+
+    Months() {
+        this.ordinalNumber = this.ordinal();
+    }
+
+    public int getOrdinalNumber() {
+        return ordinalNumber;
     }
 
 
+    public static String ofNumber(int monthNumber) {
+        try {
+            return Months.values()[monthNumber - 1].toString();
 
+        } catch (IndexOutOfBoundsException e) {
+            return "There're only 12 months. " + e.getMessage();
+
+        }
+
+
+    }
 }

@@ -1,9 +1,15 @@
 package months;
 
-public class UnsupportedMonthException extends IndexOutOfBoundsException {
+public class UnsupportedMonthException extends RuntimeException {
+
+    int invalidMonth;
+
+    public int getInvalidMonthNumber() {
+        return invalidMonth;
+    }
 
     public UnsupportedMonthException(int number) {
-        super("Error occured while parsing " + number + " to Month");
+        super("Error occurred while parsing " + number + " to Month");
     }
 
 
