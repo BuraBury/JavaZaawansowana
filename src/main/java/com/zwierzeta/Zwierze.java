@@ -2,6 +2,7 @@ package com.zwierzeta;
 
 public class Zwierze implements Zachowania {
 
+    @Override
     public void wydajDzwiek() {
         System.out.println("Kazde zwierze ma swoj glos");
     }

@@ -32,6 +32,9 @@ public class Przyklady_Zajecia_28_06 {
 
     }
 
+
+    //------------------------------------------------------------------------------------------
+
     static class NewClass {
 
         private String field;
