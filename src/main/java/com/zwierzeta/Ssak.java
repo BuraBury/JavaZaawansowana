@@ -30,5 +30,10 @@ public class Ssak extends Zwierze {
         return Objects.hash(super.hashCode(), name);
     }
 
+    @Override
+    public void jedz() {
+        System.out.println("Jem mleczko");
+    }
+
 
 }

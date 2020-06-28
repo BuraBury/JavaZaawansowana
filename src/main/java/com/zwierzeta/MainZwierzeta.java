@@ -19,10 +19,14 @@ public class MainZwierzeta {
         Gad gad = new Gad();
         Zwierze gad1 = new Gad();
 
+        ssaczek.metodaDomyslna();
+
+
         zwierze.jedz();
         ssaczek.jedz();
         System.out.println(ssaczek.przemieszczajSie(5));
         ssaczek.wydajDzwiek();
+        gad.jedz();
     }
 
 

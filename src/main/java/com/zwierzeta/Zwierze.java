@@ -8,12 +8,12 @@ public class Zwierze implements Zachowania {
 
     @Override
     public void jedz() {
-        System.out.println("am am am");
+        System.out.println("Am am am");
     }
 
     @Override
-    public int przemieszczajSie(int droga) {
-        return droga;
+    public String przemieszczajSie(int droga) {
+        return "Tyle przeszedłem: " + Integer.parseInt(String.valueOf(droga)) + "m";
     }
 
 
