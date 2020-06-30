@@ -12,6 +12,12 @@ public class MenuItemTest {
             System.out.println();
         }
 
+        try {
+            System.out.println(MenuItems.values()[4].translate(Language.ENG));
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }
+
 
     }
 }
