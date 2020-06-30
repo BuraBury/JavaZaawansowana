@@ -1,4 +1,4 @@
-package com.zwierzeta;
+package com.burabury.abstract_and_objects.zwierzeta;
 
 public interface Zachowania {
 

@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.stringAndEnums;
+package com.burabury.enums_and_exceptions.zadanie_2;
 
 public enum StringOperation {
 
@@ -6,9 +6,7 @@ public enum StringOperation {
         @Override
         String method(String origin) {
             StringBuilder a = new StringBuilder();
-            a.append(origin);
-            a = a.reverse();
-            return a.toString();
+            return a.append(origin).reverse().toString();
         }
     },
     TO_LOWER {
@@ -33,8 +31,6 @@ public enum StringOperation {
     };
 
     abstract String method(String origin);
-
-
 
 
 }

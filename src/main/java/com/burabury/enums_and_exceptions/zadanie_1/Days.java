@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.days_of_week;
+package com.burabury.enums_and_exceptions.zadanie_1;
 
 public enum Days {
     MONDAY(),
