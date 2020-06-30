@@ -11,11 +11,14 @@ public enum MenuItems implements Translatable {
         switch (this) {
             case PRODUCTS:
                 switch (language) {
-                    case PL: return "PL: Produkty";
-                    case DE: return "DE: Produkte";
-                    case ENG: return "ENG: Products";
+                    case PL:
+                        return "PL: Produkty";
+                    case DE:
+                        return "DE: Produkte";
+                    case ENG:
+                        return "ENG: Products";
                 }
-                break;
+
             case BLOG:
                 switch (language) {
                     case PL:
@@ -23,23 +26,29 @@ public enum MenuItems implements Translatable {
                     case ENG:
                         return "blog";
                 }
-                break;
+
             case CONTACT:
                 switch (language) {
-                    case PL: return "PL: Kontakt";
-                    case DE: return "DE: Kontakt";
-                    case ENG: return "ENG: Contact";
+                    case PL:
+                        return "PL: Kontakt";
+                    case DE:
+                        return "DE: Kontakt";
+                    case ENG:
+                        return "ENG: Contact";
                 }
-                break;
+
             case SITE_MAP:
                 switch (language) {
-                    case PL: return "PL: Mapa strony";
-                    case DE: return "DE: Sitemap";
-                    case ENG: return " ENG: Site map";
+                    case PL:
+                        return "PL: Mapa strony";
+                    case DE:
+                        return "DE: Sitemap";
+                    case ENG:
+                        return " ENG: Site map";
 
                 }
         }
-        return "Something goes wrong";
+        throw new IllegalArgumentException();
     }
 
 
