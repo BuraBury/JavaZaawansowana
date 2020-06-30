@@ -12,11 +12,11 @@ public enum MenuItems implements Translatable {
             case PRODUCTS:
                 switch (language) {
                     case PL:
-                        return "PL: Produkty";
+                        return "Produkty";
                     case DE:
-                        return "DE: Produkte";
+                        return "Produkte";
                     case ENG:
-                        return "ENG: Products";
+                        return "Products";
                 }
 
             case BLOG:
@@ -30,21 +30,20 @@ public enum MenuItems implements Translatable {
             case CONTACT:
                 switch (language) {
                     case PL:
-                        return "PL: Kontakt";
                     case DE:
-                        return "DE: Kontakt";
+                        return "Kontakt";
                     case ENG:
-                        return "ENG: Contact";
+                        return "Contact";
                 }
 
             case SITE_MAP:
                 switch (language) {
                     case PL:
-                        return "PL: Mapa strony";
+                        return "Mapa strony";
                     case DE:
-                        return "DE: Sitemap";
+                        return "Sitemap";
                     case ENG:
-                        return " ENG: Site map";
+                        return "Site map";
 
                 }
         }
