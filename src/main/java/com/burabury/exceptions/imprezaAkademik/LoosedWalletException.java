@@ -1,4 +1,3 @@
 package com.burabury.exceptions.imprezaAkademik;
 
-public class LoosedWalletException extends HangoverException {
-}
+public class LoosedWalletException extends HangoverException {}

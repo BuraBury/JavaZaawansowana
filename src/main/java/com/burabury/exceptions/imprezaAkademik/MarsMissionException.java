@@ -1,4 +1,3 @@
 package com.burabury.exceptions.imprezaAkademik;
 
-public class MarsMissionException extends BurningBabilonException {
-}
+public class MarsMissionException extends BurningBabilonException {}
