@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.zadanie_2;
+package com.burabury.enums.zadanie_2;
 
 public enum StringOperation {
 

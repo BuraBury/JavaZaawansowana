@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.months;
+package com.burabury.exceptions.months;
 
 public enum Months {
     JANUARY(),

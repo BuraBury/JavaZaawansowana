@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.imprezaAkademik;
+package com.burabury.exceptions.imprezaAkademik;
 
 import java.util.Random;
 

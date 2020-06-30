@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.zadanie_3;
+package com.burabury.enums.zadanie_3;
 
 public enum Print {
     ONE,

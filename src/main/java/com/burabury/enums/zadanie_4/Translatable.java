@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.zadanie_4;
+package com.burabury.enums.zadanie_4;
 
 public interface Translatable {
 

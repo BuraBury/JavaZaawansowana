@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.zadanie_1;
+package com.burabury.enums.zadanie_1;
 
 public class DaysDemo {
 

@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.seasons;
+package com.burabury.exceptions.seasons;
 
 import java.time.Year;
 

@@ -1,4 +1,4 @@
-package com.burabury.enums_and_exceptions.months;
+package com.burabury.exceptions.months;
 
 public class Main {
     public static void main(String[] args) {
