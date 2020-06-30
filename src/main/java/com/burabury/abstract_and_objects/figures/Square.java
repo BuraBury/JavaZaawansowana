@@ -1,6 +1,6 @@
 package com.burabury.abstract_and_objects.figures;
 
-public class Square extends Figure{
+public class Square extends Figure {
 
     int a;
 
@@ -21,4 +21,7 @@ public class Square extends Figure{
     double getCircuit() {
         return 4 * getA();
     }
+
+
+
 }

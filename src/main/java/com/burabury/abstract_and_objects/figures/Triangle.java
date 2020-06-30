@@ -44,4 +44,7 @@ public class Triangle extends Figure {
     double getCircuit() {
         return getA() + getB() + getC();
     }
+
+
+
 }
