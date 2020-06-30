@@ -18,7 +18,7 @@ public enum Days {
     }
 
     public String testDay() {
-        if (this == SATURDAY || this == SUNDAY) {
+        if (isHoliday()) {
             return "Today is time to Rest";
         } else {
             return "Go to work";
