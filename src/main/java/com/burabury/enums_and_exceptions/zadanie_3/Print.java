@@ -15,7 +15,7 @@ public enum Print {
     }
 
     public static void main(String[] args) {
-        Print.ONE.Times("Hello");
+        Print.THREE.Times("Hello");
     }
 
 }
