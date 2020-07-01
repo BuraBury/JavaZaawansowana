@@ -36,15 +36,18 @@ public class Triangle extends Figure {
     }
 
     @Override
-    double getField() {
-        return getA() * getH();
+    double getField() throws Exception {
+        double s;
+        if ((a < b + c && b < a + c && c < a + b)) {
+            s = (double) ((a + b + c) * ((a + b) - c) * ((a - b) + c) * (-a + b + c)) / 4;
+        } else throw new Exception();
+        return Math.sqrt(s);
     }
 
     @Override
     double getCircuit() {
         return getA() + getB() + getC();
     }
-
 
 
 }

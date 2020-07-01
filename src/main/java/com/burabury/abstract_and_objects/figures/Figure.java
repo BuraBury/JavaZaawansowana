@@ -2,7 +2,7 @@ package com.burabury.abstract_and_objects.figures;
 
 public class Figure {
 
-    double getField() {
+    double getField() throws Exception {
         return 0;
     }
 

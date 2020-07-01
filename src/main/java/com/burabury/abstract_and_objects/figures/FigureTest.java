@@ -1,14 +1,19 @@
 package com.burabury.abstract_and_objects.figures;
 
 public class FigureTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Square square = new Square(2);
-        Triangle triangle = new Triangle(3, 3, 3, 4);
+        Triangle triangle = new Triangle(3, 1, 5, 4);
         Circle circle = new Circle(3);
 
-        System.out.println(circle.getField());
-        System.out.println(circle.getCircuit());
+
+        try {
+            System.out.println(triangle.getField());
+        } catch (Exception e) {
+            System.out.println(("There's no such triangle in this World, my Lord"));
+        }
+
 
     }
 }
