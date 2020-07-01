@@ -1,4 +1,4 @@
-package com.burabury.abstract_and_objects.Phone;
+package com.burabury.abstract_and_objects.phone;
 
 import java.util.Objects;
 
