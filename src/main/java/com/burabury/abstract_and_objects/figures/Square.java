@@ -17,8 +17,8 @@ public class Square extends Figure {
         return Math.pow(getA(), 2);
     }
 
-    @Override
-    double getCircuit() {
+        @Override
+        double getCircuit() {
         return 4 * getA();
     }
 

@@ -4,7 +4,7 @@ public class FigureTest {
     public static void main(String[] args) throws Exception {
 
         Square square = new Square(2);
-        Triangle triangle = new Triangle(3, 1, 5, 4);
+        Triangle triangle = new Triangle(2, 1, 5, 4);
         Circle circle = new Circle(3);
 
 
@@ -13,6 +13,8 @@ public class FigureTest {
         } catch (Exception e) {
             System.out.println(("There's no such triangle in this World, my Lord"));
         }
+
+
 
 
     }
