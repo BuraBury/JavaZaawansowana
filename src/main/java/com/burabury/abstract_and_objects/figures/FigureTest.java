@@ -10,7 +10,7 @@ public class FigureTest {
 
         try {
             System.out.println(triangle.getField());
-        } catch (Exception e) {
+        } catch (WrongFieldData e) {
             System.out.println(("There's no such triangle in this World, my Lord"));
         }
 

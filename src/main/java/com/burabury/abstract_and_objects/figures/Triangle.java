@@ -40,7 +40,7 @@ public class Triangle extends Figure {
         double s;
         if ((a < b + c && b < a + c && c < a + b)) {
             s = (double) ((a + b + c) * ((a + b) - c) * ((a - b) + c) * (-a + b + c)) / 4;
-        } else throw new Exception();
+        } else throw new WrongFieldData();
         return Math.sqrt(s);
     }
 
