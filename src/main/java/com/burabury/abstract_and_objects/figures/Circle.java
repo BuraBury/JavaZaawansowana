@@ -13,13 +13,22 @@ public class Circle extends Figure {
 
     @Override
     double getCircuit() {
-        return Math.PI * 2 * getR();
+        double circuit = Math.PI * 2 * getR();
+        if (circuit < 0) {
+            try {
+                throw new WrongCircuitData();
+            } catch (WrongCircuitData wrongCircuitData) {
+               System.exit(0);
+            }
+        }
+        return circuit;
     }
 
     @Override
     double getField() {
         return Math.PI * Math.pow(getR(), 2);
     }
+
 
 
 }

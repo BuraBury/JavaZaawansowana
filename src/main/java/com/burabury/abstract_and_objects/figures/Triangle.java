@@ -46,8 +46,18 @@ public class Triangle extends Figure {
 
     @Override
     double getCircuit() {
-        return getA() + getB() + getC();
+        double circuit = a + b + c;
+        if (circuit < 0 || !(a < b + c && b < a + c && c < a + b)) {
+            try {
+                throw new WrongCircuitData();
+            } catch (WrongCircuitData wrongCircuitData) {
+                System.exit(0);
+            }
+        }
+
+        return circuit;
     }
+
 
 
 }

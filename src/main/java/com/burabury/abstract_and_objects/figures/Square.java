@@ -14,12 +14,20 @@ public class Square extends Figure {
 
     @Override
     double getField() {
-        return Math.pow(getA(), 2);
+        return Math.pow(a, 2);
     }
 
-        @Override
-        double getCircuit() {
-        return 4 * getA();
+    @Override
+    double getCircuit() {
+        double circuit = 4 * a;
+        if (circuit < 0) {
+            try {
+                throw new WrongCircuitData();
+            } catch (WrongCircuitData wrongCircuitData) {
+                System.exit(0);
+            }
+        }
+        return circuit;
     }
 
 
