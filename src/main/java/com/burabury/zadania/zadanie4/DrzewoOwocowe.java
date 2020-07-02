@@ -16,4 +16,10 @@ public class DrzewoOwocowe extends DrzewoLisciaste {
     public String toString() {
         return super.toString() + "\nnazwa owoców: " + getNazwaOwoca();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        DrzewoOwocowe object = (DrzewoOwocowe) o;
+        return super.equals(o) && getNazwaOwoca().equals(object.getNazwaOwoca());
+    }
 }
