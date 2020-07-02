@@ -3,7 +3,7 @@ package com.burabury.zadania.zadanie4;
 import java.util.Arrays;
 
 public class Las {
-    private Drzewo[] drzewa;
+    private final Drzewo[] drzewa;
 
     public Las(Drzewo... drzewa) {
         this.drzewa = drzewa;
