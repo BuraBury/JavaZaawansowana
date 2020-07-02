@@ -7,6 +7,9 @@ public class MainStrings {
 
 
         System.out.println(StringOperation.UPPER_FIRST.of(StringOperation.REVERSE.of("Iksomreż")));
+        System.out.println(StringOperation.TO_LOWER.of(StringOperation.REVERSE.of("Iksomreż")));
+        System.out.println(StringOperation.TO_UPPER.of(StringOperation.REVERSE.of("Iksomreż")));
+
 
         
 
