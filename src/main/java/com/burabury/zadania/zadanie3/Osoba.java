@@ -31,10 +31,10 @@ public class Osoba {
 
     @Override
     public String toString() {
-        return "Osoba{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                " pesel= " + pesel +"}";
+        return
+                "imie : " + imie + '\n' +
+                "nazwisko : " + nazwisko + '\n' +
+                "pesel : " + pesel;
     }
 
 

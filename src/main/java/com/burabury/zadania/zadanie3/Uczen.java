@@ -20,7 +20,7 @@ public class Uczen extends Osoba {
 
     @Override
     public String toString() {
-        return super.toString() + "\n obecna szkoła: " + getNazwaSzkoly();
+        return super.toString() + "\nobecna szkoła: " + getNazwaSzkoly();
     }
 
     @Override
@@ -29,15 +29,8 @@ public class Uczen extends Osoba {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Uczen uczen = (Uczen) o;
-        return Objects.equals(getImie(), uczen.getImie()) &&
-                Objects.equals(getNazwisko(), uczen.getNazwisko()) &&
-                Objects.equals(getNazwaSzkoly(), uczen.getNazwaSzkoly());
-    }
+        return Objects.equals(getNazwaSzkoly(), uczen.nazwaSzkoly);
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), getNazwaSzkoly());
     }
-
 
 }
