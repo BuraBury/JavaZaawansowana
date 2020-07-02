@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Osoba {
     private final String imie;
     private final String nazwisko;
-    final String pesel;
+    private final String pesel;
 
     public Osoba(String imie, String nazwisko, String pesel) {
         this.imie = imie;
