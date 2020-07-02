@@ -53,6 +53,7 @@ class StringOperationTest {
     }
 
     @Test
+    @DisplayName("should 'of();' method return String's first letter UpperCase")
     void shouldOfReturnFirstLetterUpperCase() {
         //given
         String origin = "abeCadLo";
