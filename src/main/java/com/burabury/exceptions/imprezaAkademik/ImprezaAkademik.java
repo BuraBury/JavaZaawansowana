@@ -3,10 +3,14 @@ package com.burabury.exceptions.imprezaAkademik;
 import java.util.Random;
 
 public class ImprezaAkademik {
+    private Random random;
+
+    public ImprezaAkademik(Random random) {
+        this.random = random;
+    }
 
     public void party(int drunkLevel) throws HangoverException, UnexpectedSituationException {
 
-        Random random = new Random();
         drunkLevel = random.nextInt(55);
 
         if (drunkLevel > 0 && drunkLevel <= 5) {
