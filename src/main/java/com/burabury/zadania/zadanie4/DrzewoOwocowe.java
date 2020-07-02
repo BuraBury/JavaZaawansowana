@@ -1,7 +1,7 @@
 package com.burabury.zadania.zadanie4;
 
 public class DrzewoOwocowe extends DrzewoLisciaste {
-    private String nazwaOwoca;
+    private final String nazwaOwoca;
 
     public DrzewoOwocowe(String name, boolean wiecznieZielone, int wysokosc, String przekrojDrzewa, int ksztaltLiscia, String nazwaOwoca) {
         super(name, wiecznieZielone, wysokosc, przekrojDrzewa, ksztaltLiscia);
