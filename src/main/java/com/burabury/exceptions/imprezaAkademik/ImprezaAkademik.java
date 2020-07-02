@@ -9,13 +9,14 @@ public class ImprezaAkademik {
         this.random = random;
     }
 
-    public void party(int drunkLevel) throws HangoverException, UnexpectedSituationException {
 
-        drunkLevel = random.nextInt(55);
+    public void party(int drunkLevel) throws UnexpectedSituationException, HangoverException {
 
-        if (drunkLevel > 0 && drunkLevel <= 5) {
+        int i = random.nextInt(30);
+
+        if (i > 0 && i <= 5) {
             throw new UnexpectedSituationException();
-        } else if (drunkLevel > 5 && drunkLevel <= 20) {
+        } else if (i > 5 && i <= 20) {
             return;
         }
 
