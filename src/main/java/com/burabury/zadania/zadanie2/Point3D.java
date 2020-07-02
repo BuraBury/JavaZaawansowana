@@ -22,8 +22,8 @@ public class Point3D extends Point2D {
     public String toString() {
         return "Point3D{" +
                 "z=" + z +
-                ", x=" + x +
-                ", y=" + y +
+                ", x=" + getX() +
+                ", y=" + getY() +
                 '}';
     }
 
@@ -32,11 +32,11 @@ public class Point3D extends Point2D {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Point3D point3D = (Point3D) o;
-        return z == point3D.z && x == point3D.x && y == point3D.y;
+        return z == point3D.z && getX() == point3D.getX() && getY() == point3D.getY();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(z, x, y);
+        return Objects.hash(z, getX(), getY());
     }
 }
