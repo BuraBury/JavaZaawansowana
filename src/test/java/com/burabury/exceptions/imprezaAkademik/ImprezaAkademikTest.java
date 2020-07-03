@@ -63,5 +63,50 @@ class ImprezaAkademikTest {
                 });
     }
 
+    @Test
+    void shouldThrowBurningBabilonExceptionWhenDrunkLevelOver40AndRandomReturnValueOver20() {
+        int drunkLevel = 44;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+
+        assertThrows(BurningBabilonException.class,
+                () -> {
+                    imprezaAkademik.party(drunkLevel);
+                });
+    }
+
+    @Test
+    void shouldThrowLoosedWalletExceptionWhenDrunkLevelOver30AndRandomReturnOver20() {
+        int drunkLevel = 33;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+
+        assertThrows(LoosedWalletException.class,
+                () -> {
+                    imprezaAkademik.party((drunkLevel));
+                });
+    }
+
+    @Test
+    void shouldThrowLoosedKeyExceptionWhenDrunkLevelOver20AndRandomReturnOver20() {
+        int drunkLevel = 22;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+
+        assertThrows(LoosedKeyException.class,
+                () -> {
+                    imprezaAkademik.party(drunkLevel);
+                });
+    }
+
+    @Test
+    void shouldThrowHangoverExceptionWhenDrunkLevelOver10AndRandomReturnOver20() {
+        int drunkLevel = 11;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+
+        assertThrows(HangoverException.class,
+                () -> {
+                    imprezaAkademik.party(drunkLevel);
+                });
+    }
+
+
 
 }
