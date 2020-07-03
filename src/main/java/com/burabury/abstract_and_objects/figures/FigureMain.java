@@ -1,6 +1,6 @@
 package com.burabury.abstract_and_objects.figures;
 
-public class FigureTest {
+public class FigureMain {
     public static void main(String[] args) throws Exception {
 
         Square square = new Square(2);

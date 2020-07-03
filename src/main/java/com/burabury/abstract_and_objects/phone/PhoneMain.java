@@ -1,6 +1,6 @@
 package com.burabury.abstract_and_objects.phone;
 
-public class PhoneTest {
+public class PhoneMain {
 
     public static void main(String[] args) {
 

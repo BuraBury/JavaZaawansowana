@@ -1,6 +1,6 @@
 package com.burabury.abstract_and_objects.vehicles;
 
-public class VehiclesTest {
+public class VehiclesMain {
     public static void main(String[] args) {
         Bus bus = new Bus();
         bus.drive();

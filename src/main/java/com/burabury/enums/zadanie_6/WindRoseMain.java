@@ -2,7 +2,7 @@ package com.burabury.enums.zadanie_6;
 
 import static java.util.Arrays.*;
 
-public class WindRoseTest {
+public class WindRoseMain {
     public static void main(String[] args) {
 
         stream(WindRose.values()).forEach(System.out::println);

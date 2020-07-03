@@ -1,7 +1,7 @@
 package com.burabury.enums.zadanie_4;
 
 
-public class MenuItemTest {
+public class MenuItemMain {
     public static void main(String[] args) {
 
         for (int i = 0; i < MenuItems.values().length; i++) {

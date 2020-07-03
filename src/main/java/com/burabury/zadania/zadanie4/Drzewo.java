@@ -20,7 +20,7 @@ public class Drzewo {
         return "\n\n\tDrzewo " + name +
                 "\nwiecznie zielone: " + wiecznieZielone +
                 "\nwysokosc = " + wysokosc +
-                "\nprzekroj drzewa " + przekrojDrzewa + "\n";
+                "\nprzekroj drzewa: " + przekrojDrzewa + "\n";
     }
 
     @Override
