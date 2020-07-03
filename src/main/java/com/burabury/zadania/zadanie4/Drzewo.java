@@ -17,7 +17,7 @@ public class Drzewo {
 
     @Override
     public String toString() {
-        return "\n\n\tDrzewo " +
+        return "\n\n\tDrzewo " + name +
                 "\nwiecznie zielone: " + wiecznieZielone +
                 "\nwysokosc = " + wysokosc +
                 "\nprzekroj drzewa " + przekrojDrzewa + "\n";
