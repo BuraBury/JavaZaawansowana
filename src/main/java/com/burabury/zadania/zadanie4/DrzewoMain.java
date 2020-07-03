@@ -13,7 +13,7 @@ public class DrzewoMain {
 
         System.out.println(las.toString());
 
-        System.out.println("\nDoes larch equals another larch with different height?\n" + modrzew.equals(modrzew2));
-        System.out.println("\nDoes larch equals apple tree?\n"+dab.equals(jablon));
+        System.out.printf("\nDoes larch equals another larch with different height?\n%s%n", modrzew.equals(modrzew2));
+        System.out.printf("\nDoes larch equals apple tree?\n%s%n", dab.equals(jablon));
     }
 }
