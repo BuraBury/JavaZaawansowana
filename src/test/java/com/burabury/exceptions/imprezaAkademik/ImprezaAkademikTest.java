@@ -36,8 +36,31 @@ class ImprezaAkademikTest {
                 () -> {
                     imprezaAkademik.party(drunkLevel);
                 });
+    }
 
-        //then
+    @Test
+    void shouldReturnEmptyResultWhenRandomReturnValueBetween5And20() throws HangoverException, UnexpectedSituationException {
+        int drunkLevel = 0;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(20);
+        imprezaAkademik.party(drunkLevel);
+    }
+
+    @Test
+    void shouldReturnEmtyResultWhenRandomValueOver20AndDrunkLevelLoverThan10() throws HangoverException, UnexpectedSituationException {
+        int drunkLevel = 8;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+        imprezaAkademik.party(drunkLevel);
+    }
+
+    @Test
+    void shouldThrowMarsMissionExceptionWhenDrunkLevelOver50AndRandomReturnValueOver20() throws HangoverException, UnexpectedSituationException {
+        int drunkLevel = 55;
+        Mockito.when(randomMock.nextInt(30)).thenReturn(23);
+        assertThrows(MarsMissionException.class,
+                () -> {
+                    imprezaAkademik.party(drunkLevel);
+
+                });
     }
 
 

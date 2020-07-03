@@ -2,7 +2,7 @@ package com.burabury.exceptions.imprezaAkademik;
 
 import java.util.Random;
 
-public class ImprezaAkademikTest {
+public class ImprezaAkademikMain {
     public static void main(String[] args) {
 
         for (int i = 0; i < 60; i += 2) {
@@ -21,6 +21,7 @@ public class ImprezaAkademikTest {
             } catch (HangoverException e) {
                 System.out.println("Los był dla ciebie łaskawy, skończyło się tylko kacem");
             }
+
 
 
         }
