@@ -11,19 +11,32 @@ class StringCollectionTest {
 
     @Test
     void shouldRemoveDuplicates() {
-        List<String> list = new ArrayList<>();
-        list.add("jeden");
-        list.add("dwa");
-        list.add("jeden");
-        list.add("jeden");
-        list.add("trzy");
+        List<MyObject> input = new ArrayList<>();
+        MyObject myA = new MyObject("jeden", 1);
+        input.add(myA);
 
-        List<String> output = StringCollection.removeDuplicates(list);
+        MyObject myB = new MyObject("dwa", 1);
+        input.add(myB);
+        input.add(myB);
+
+        MyObject myC = new MyObject("trzy", 1);
+        input.add(myC);
+        input.add(myC);
+
+        assertEquals(5, input.size());
+
+        List<MyObject> output = MyObject.removeDuplicates(input);
 
         assertEquals(3, output.size());
-        assertEquals("jeden", output.get(0));
-        assertEquals("dwa", output.get(1));
-        assertEquals("trzy", output.get(2));
+
+        assertEquals("jeden", output.get(0).getAnyString());
+        assertEquals(1, output.get(0).getAnyInt());
+
+        assertEquals("dwa", output.get(1).getAnyString());
+        assertEquals(1, output.get(1).getAnyInt());
+
+        assertEquals("trzy", output.get(2).getAnyString());
+        assertEquals(1, output.get(2).getAnyInt());
     }
 
 }
