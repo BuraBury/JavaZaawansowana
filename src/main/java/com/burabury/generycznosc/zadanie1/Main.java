@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.food;
+package com.burabury.generycznosc.zadanie1;
 
 public class Main {
     public static void main(String[] args) {

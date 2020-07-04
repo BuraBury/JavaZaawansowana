@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.food;
+package com.burabury.generycznosc.zadanie1;
 
 abstract class Food {
     protected final String name;
