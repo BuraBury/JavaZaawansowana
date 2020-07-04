@@ -92,12 +92,11 @@ public class MyObject implements Comparable<MyObject> {
     public static void main(String[] args) {
         testSet();
 
-        MyObject myObject = new MyObject("a",1,2);
+        MyObject myObject = new MyObject("a", 1, 2);
         MyObject myObject1 = new MyObject("a", 3, 4);
         int value = myObject.compareTo(myObject1);
         System.out.println(value);
     }
-
 
 
 }
