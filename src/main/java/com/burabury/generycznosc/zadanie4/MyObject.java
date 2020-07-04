@@ -6,8 +6,8 @@ import java.util.Objects;
 
 public class MyObject {
 
-    String anyString;
-    int anyInt;
+    private final String anyString;
+    protected final int anyInt;
 
     public MyObject(String anyString, int anyInteger) {
         this.anyString = anyString;
@@ -27,8 +27,8 @@ public class MyObject {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MyObject myObject = (MyObject) o;
-        return Objects.equals(anyString, myObject.anyString) &&
-                Objects.equals(anyInt, myObject.anyInt);
+        return anyInt == myObject.anyInt &&
+                Objects.equals(anyString, myObject.anyString);
     }
 
     @Override

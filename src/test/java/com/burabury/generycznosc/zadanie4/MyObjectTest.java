@@ -7,19 +7,19 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StringCollectionTest {
+class MyObjectTest {
 
     @Test
     void shouldRemoveDuplicates() {
         List<MyObject> input = new ArrayList<>();
-        MyObject myA = new MyObject("jeden", 1);
+
+        MyObject myA = new MyObject("a", 1);
+        MyObject myB = new MyObject("b", 1);
+        MyObject myC = new MyObject("c", 1);
+
         input.add(myA);
-
-        MyObject myB = new MyObject("dwa", 1);
         input.add(myB);
         input.add(myB);
-
-        MyObject myC = new MyObject("trzy", 1);
         input.add(myC);
         input.add(myC);
 
@@ -29,14 +29,12 @@ class StringCollectionTest {
 
         assertEquals(3, output.size());
 
-        assertEquals("jeden", output.get(0).getAnyString());
-        assertEquals(1, output.get(0).getAnyInt());
+        assertEquals("a", output.get(0).getAnyString());
 
-        assertEquals("dwa", output.get(1).getAnyString());
-        assertEquals(1, output.get(1).getAnyInt());
+        assertEquals("b", output.get(1).getAnyString());
 
-        assertEquals("trzy", output.get(2).getAnyString());
-        assertEquals(1, output.get(2).getAnyInt());
+        assertEquals("c", output.get(2).getAnyString());
+
     }
 
 }
