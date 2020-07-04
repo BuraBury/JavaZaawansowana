@@ -5,6 +5,13 @@ import java.util.List;
 
 public class StringCollection {
     public static void main(String[] args) {
+        List<String> lista = new ArrayList<>();
+        lista.add("aa");
+        lista.add("aa");
+        lista.add("aa");
+        lista.add("aa");
+        lista.add("bb");
+        System.out.println(removeDuplicates(lista));
 
     }
 
@@ -12,11 +19,11 @@ public class StringCollection {
 
         List<String> toReturn = new ArrayList<>();
         for (String s : list) {
-            if(!toReturn.contains(s)) {
+            if (!toReturn.contains(s)) {
                 toReturn.add(s);
             }
         }
-        return list;
+        return toReturn;
     }
 
 
