@@ -2,10 +2,10 @@ package com.burabury.abstract_and_objects.figures;
 
 public class Triangle extends Figure {
 
-    int a;
-    int b;
-    int c;
-    int h;
+    private int a;
+    private int b;
+    private int c;
+    private int h;
 
     Triangle(int a, int h) {
         this.a = a;

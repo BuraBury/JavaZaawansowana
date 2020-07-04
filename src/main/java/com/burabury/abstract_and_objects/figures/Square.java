@@ -2,7 +2,7 @@ package com.burabury.abstract_and_objects.figures;
 
 public class Square extends Figure {
 
-    int a;
+    private int a;
 
     public Square(int a) {
         this.a = a;

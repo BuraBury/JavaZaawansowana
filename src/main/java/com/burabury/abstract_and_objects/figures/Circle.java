@@ -1,7 +1,7 @@
 package com.burabury.abstract_and_objects.figures;
 
 public class Circle extends Figure {
-    int r;
+    private final int r;
 
     public Circle(int r) {
         this.r = r;
@@ -18,17 +18,17 @@ public class Circle extends Figure {
             try {
                 throw new WrongCircuitData();
             } catch (WrongCircuitData wrongCircuitData) {
-               System.exit(0);
+                return -1;
             }
+        } else {
+            return circuit;
         }
-        return circuit;
     }
 
     @Override
     double getField() {
         return Math.PI * Math.pow(getR(), 2);
     }
-
 
 
 }
