@@ -1,8 +1,6 @@
 package com.burabury.generycznosc.zadanie4;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class MyObject {
 
@@ -18,7 +16,7 @@ public class MyObject {
         return anyString;
     }
 
-    public Integer getAnyInt() {
+    public int getAnyInt() {
         return anyInt;
     }
 
@@ -46,6 +44,25 @@ public class MyObject {
             }
         }
         return toReturn;
+    }
+
+    public static void testSet() {
+        MyObject myObject = new MyObject("a", 1);
+        MyObject myObject1 = new MyObject("b", 1);
+        MyObject myObject2 = new MyObject("c", 2);
+
+        Set<MyObject> hashSet = new HashSet<>();
+        Set<MyObject> treeSet = new TreeSet<>(Comparator.comparing(MyObject::getAnyInt).thenComparing(MyObject::getAnyInt));
+
+        hashSet.add(myObject);
+        hashSet.add(myObject1);
+        hashSet.add(myObject2);
+
+        treeSet.add(myObject);
+        treeSet.add(myObject1);
+        treeSet.add(myObject2);
+
+
     }
 
 

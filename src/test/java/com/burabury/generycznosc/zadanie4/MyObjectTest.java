@@ -34,13 +34,18 @@ class MyObjectTest {
 
 
         assertEquals("b", output.get(1).getAnyString());
-        assertEquals(1, java.util.Optional.ofNullable(output.get(0).getAnyInt()));
+        assertEquals(1, output.get(0).getAnyInt());
 
 
         assertEquals("c", output.get(2).getAnyString());
         assertEquals(1, output.get(0).getAnyInt());
 
 
+    }
+
+    @Test
+    void shouldTestSetsRun() {
+        MyObject.testSet();
     }
 
 }
