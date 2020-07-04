@@ -20,7 +20,7 @@ class StringCollectionTest {
 
         List<String> output = StringCollection.removeDuplicates(list);
 
-        assertEquals(5, output.size());
+        assertEquals(3, output.size());
         assertEquals("aa", output.get(0));
         assertEquals("bb", output.get(1));
         assertEquals("cc", output.get(2));
