@@ -27,9 +27,10 @@ public class MyObject {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MyObject myObject = (MyObject) o;
-        return anyInt == myObject.anyInt &&
-                Objects.equals(anyString, myObject.anyString);
+        return Objects.equals(anyString, myObject.anyString) &&
+                anyInt == myObject.getAnyInt();
     }
+
 
     @Override
     public int hashCode() {

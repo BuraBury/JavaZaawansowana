@@ -14,7 +14,7 @@ class MyObjectTest {
         List<MyObject> input = new ArrayList<>();
 
         MyObject myA = new MyObject("a", 1);
-        MyObject myB = new MyObject("b", 1);
+        MyObject myB = new MyObject("b", 2);
         MyObject myC = new MyObject("c", 1);
 
         input.add(myA);
@@ -30,10 +30,16 @@ class MyObjectTest {
         assertEquals(3, output.size());
 
         assertEquals("a", output.get(0).getAnyString());
+        assertEquals(1, output.get(0).getAnyInt());
+
 
         assertEquals("b", output.get(1).getAnyString());
+        assertEquals(1, java.util.Optional.ofNullable(output.get(0).getAnyInt()));
+
 
         assertEquals("c", output.get(2).getAnyString());
+        assertEquals(1, output.get(0).getAnyInt());
+
 
     }
 
