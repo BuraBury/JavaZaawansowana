@@ -3,6 +3,7 @@ package com.burabury.streams.exercise_6;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -66,16 +67,35 @@ public class Main {
         return map1;
     }
 
+    public static void createStringWithInfos() {
+        createListBooks().stream()
+                .map(book -> new StringBuilder(book.getAuthor().getName())
+
+                        .append(" ")
+                        .append(book.getAuthor().getSurname())
+                        .append("")
+                        .append(book.getTitle())
+                        .append(" ")
+                        .append(book.getPrice())
+                        .append(" ")
+                        .toString())
+                .collect(Collectors.toSet());
+
+    }
+
+    public static void sortByTitles() {
+        createListBooks().stream()
+                .sorted(Comparator.comparing(Book::getTitle))
+                .collect(Collectors.toList());
+    }
+
+
     public static List<Book> createListBooks() {
         return new ArrayList<>();
     }
 
 
-
-
-
     public static void main(String[] args) {
-
 
 
     }
