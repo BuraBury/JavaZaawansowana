@@ -1,7 +1,5 @@
 package com.burabury.streams;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
