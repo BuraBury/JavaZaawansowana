@@ -17,7 +17,7 @@ public class Exercise1 {
         Set<String> collect = stream
                 .filter(element -> element.length() > 5)
                 .map(String::toUpperCase)
-//                .map(element -> element.toUpperCase())
+//              .map(element -> element.toUpperCase())
                 .collect(Collectors.toSet());
 
         collect.forEach(System.out::println);
@@ -35,7 +35,7 @@ public class Exercise1 {
 
         Set<String> collect = stream.filter(element -> element.length() > 5)
                 .map(String::toUpperCase)
-//                .map(element -> element.toUpperCase())
+//              .map(element -> element.toUpperCase())
                 .collect(Collectors.toSet());
 
         for (String s : collect) {
