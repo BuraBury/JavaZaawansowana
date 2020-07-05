@@ -1,14 +1,14 @@
 package com.burabury.streams.exercise_6;
 
 public class Author {
-    private String name;
-    private String surname;
-    private int age;
+    private final String name;
+    private final String surname;
+    private final int yearOfBirth;
 
     public Author(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
-        this.age = age;
+        this.yearOfBirth = age;
     }
 
     public String getName() {
@@ -19,7 +19,7 @@ public class Author {
         return surname;
     }
 
-    public int getAge() {
-        return age;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 }

@@ -5,4 +5,5 @@ public enum BookType {
     THRILLER,
     SCIENCE,
     FANTASY;
+
 }
