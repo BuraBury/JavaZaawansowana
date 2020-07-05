@@ -1,30 +1,33 @@
 package com.burabury.klasyWewnetrzne;
 
-
-//lambda to sposob wyrazenia interface funkcjonalnego
-
-import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 
 public class Lambda {
-    @FunctionalInterface
-    interface MathOperation<TYPE> {
-        TYPE calculate(TYPE a, TYPE b);
-    }
 
-    private static void calculate(MathOperation<Long> o, Long a, Long b) {
-        System.out.println(o.calculate(a, b));
+    private static void calculator(BinaryOperator<Long> o, Long a, Long b) {
+        System.out.println(o.apply(a, b));
     }
 
     public static void lambdaPlay() {
+        BinaryOperator<Long> add = Long::sum;
+        BinaryOperator<Long> multiply = (a, b) -> a * b;
+        BinaryOperator<Long> divide = (a, b) -> a / b;
+        BinaryOperator<Long> subtract = (a, b) -> a - b;
 
-        BiFunction<Long, Long, Long> add = (a, b) -> a + b;
-        BiFunction<Long, Long, Long> multiply = (a, b) -> a * b;
-        BiFunction<Long, Long, Long> divide = (a, b) -> a / b;
-        BiFunction<Long, Long, Long> subtract = (a, b) -> a - b;
+        Long a = 10L;
+        Long b = 5L;
+
+        calculator(add, a, b);
+        calculator(subtract, a, b);
+        calculator(divide, a, b);
+        calculator(multiply, a, b);
 
     }
 
     public static void main(String[] args) {
+
+        lambdaPlay();
+
 
 
 
