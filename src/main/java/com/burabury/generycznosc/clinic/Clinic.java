@@ -14,12 +14,12 @@ public class Clinic {
         return queue;
     }
 
-    public Queue<String> registerPatient(String name) {
-        queue.add(name);
-        return queue;
+    public static Queue<String> registerPatient(Clinic clinic, String name) {
+        clinic.getQueue().add(name);
+        return clinic.getQueue();
     }
 
-    public static String priorityPatient(Clinic clinic, String name) {
+    public static String priorityPatientToHandle(Clinic clinic, String name) {
         clinic.getQueue().remove(name);
         return name + " - really sick patient. PRIORITY";
     }
