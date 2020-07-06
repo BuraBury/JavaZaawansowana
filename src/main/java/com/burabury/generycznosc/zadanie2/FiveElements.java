@@ -1,20 +1,31 @@
 package com.burabury.generycznosc.zadanie2;
 
-class FiveElements<FIRST_TYPE, SECOND_TYPE, THIRD_TYPE, FOURTH_TYPE, FIFTH_TYPE> {
+public class FiveElements<FIRST, SECOND, THIRD, FOURTH, FIFTH> {
+    private final Pair<FIRST, SECOND> pair;
+    private final Triple<THIRD, FOURTH, FIFTH> triple;
 
-    private final Pair<FIRST_TYPE, SECOND_TYPE> pair;
-    private final Triple<THIRD_TYPE, FOURTH_TYPE, FIFTH_TYPE> triple;
-
-    public FiveElements(Pair<FIRST_TYPE, SECOND_TYPE> pair, Triple<THIRD_TYPE, FOURTH_TYPE, FIFTH_TYPE> triple) {
-        this.pair = pair;
-        this.triple = triple;
+    public FiveElements(FIRST a, SECOND b, THIRD c, FOURTH d, FIFTH e) {
+        this.pair = new Pair<>(a, b);
+        this.triple = new Triple<>(c, d, e);
     }
 
-    public FIRST_TYPE getFirst() {
+    public FIRST getFirst() {
         return pair.getFirst();
     }
-    public SECOND_TYPE getSecond() {
+
+    public SECOND getSecond() {
         return pair.getSecond();
     }
 
+    public THIRD getThird() {
+        return triple.getFirst();
+    }
+
+    public FOURTH getFourth() {
+        return triple.getSecond();
+    }
+
+    public FIFTH getFifth() {
+        return triple.getThird();
+    }
 }

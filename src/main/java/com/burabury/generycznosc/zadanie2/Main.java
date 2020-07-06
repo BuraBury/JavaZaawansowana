@@ -2,10 +2,16 @@ package com.burabury.generycznosc.zadanie2;
 
 public class Main {
     public static void main(String[] args) {
-        Pair <String, Integer> pair = new Pair<>("String", 5);
-        Triple<Character, Boolean, Double> triple= new Triple<>('g', true, 2.3);
-       //FiveElements<String, Integer, Character, Boolean, Double> fiveElements = new FiveElements<>("aa", 5, 'g', true, 3.4);
+        Pair<Integer, Integer> pair = new Pair<>(1, 2);
+        Triple<String, Integer, Integer> triple = new Triple<>("jeden", 2, 3);
+        FiveElements<Integer, String, Integer, Integer, Integer> fiveElements = new FiveElements<>(1, "dwa", 3, 4, 5);
 
-
+        System.out.println(pair.getFirst());
+        System.out.println(pair.getSecond());
+        System.out.println(triple.getFirst());
+        System.out.println(triple.getSecond());
+        System.out.println(triple.getThird());
+        System.out.println(fiveElements.getFourth());
+        System.out.println(fiveElements.getSecond());
     }
 }
