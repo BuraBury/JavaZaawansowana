@@ -14,10 +14,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
         Clinic clinic = new Clinic();
-        Visit visit = new Visit();
 
 
         clinic.registerPatient("Paulina");
