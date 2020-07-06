@@ -72,7 +72,12 @@ public class CollectionRunner {
         b.add(2);
         System.out.println(a.equals(b));
         System.out.println("\n");
+
+
         TreeSet<Integer> treeSet = oddRandomNumbersToTreeSet();
         System.out.println(treeSet);
+        System.out.println(treeSet.floor(100));
+        System.out.println(treeSet.ceiling(-2));
+        System.out.println(treeSet.higher(8));
     }
 }
