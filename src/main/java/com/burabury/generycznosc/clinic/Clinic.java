@@ -5,7 +5,7 @@ import java.util.Queue;
 
 
 public class Clinic {
-    Visit visit = new Visit();
+   protected final VisitsHistory visitsHistory = new VisitsHistory();
 
     private final Queue<String> queue;
 
@@ -13,21 +13,20 @@ public class Clinic {
         queue = new LinkedList<>();
     }
 
-    public Queue<String> registerPatient(String name) {
+    public void registerPatient(String name) {
         queue.add(name);
-        return queue;
     }
 
     public String priorityPatientToHandle(String name) {
         queue.remove(name);
-        visit.addToFiles(name);
+        visitsHistory.addToFiles(name);
         return name;
     }
 
     public String handlePatient() {
         String name = queue.element();
         queue.remove(name);
-        visit.addToFiles(name);
+        visitsHistory.addToFiles(name);
 
         return name;
     }
@@ -43,8 +42,6 @@ public class Clinic {
                 "Patients in queue: ");
         System.out.println(queue);
     }
-
-
 
 
 }

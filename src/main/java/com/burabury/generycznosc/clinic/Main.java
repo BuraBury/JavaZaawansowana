@@ -9,7 +9,7 @@ package com.burabury.generycznosc.clinic;
  */
 
 
-import java.util.Scanner;
+import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,27 +18,28 @@ public class Main {
 
 
         clinic.registerPatient("Paulina");
-
-
         clinic.registerPatient("Jakub");
-
-
         clinic.registerPatient("Bercik");
         clinic.registerPatient("Paweł");
         clinic.registerPatient("Łukasz");
         clinic.registerPatient("Dyzio");
         clinic.registerPatient("Zyzio");
 
-        System.out.println(clinic.handlePatient());
-        System.out.println(clinic.handlePatient());
-        System.out.println(clinic.handlePatient());
+        try {
+            System.out.println(clinic.priorityPatientToHandle("Dyzio"));
+            System.out.println(clinic.handlePatient());
+            System.out.println(clinic.handlePatient());
+            System.out.println(clinic.handlePatient());
+            System.out.println(clinic.handlePatient());
+        } catch (NoSuchElementException e) {
+            System.out.println("Brak kolejnego pacjenta w kolejce");
+        }
 
-        System.out.println(clinic.priorityPatientToHandle("Dyzio"));
 
         clinic.showQueueSize();
         clinic.showQueueMembers();
 
-        clinic.visit.showHistory();
+        System.out.println(clinic.visitsHistory.showHistory());
 
 
     }
