@@ -1,6 +1,8 @@
 package com.burabury.generycznosc.zadanie3;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /*
  *** @oddRandomNumbers() - method fills list with randmo Integers from 0 to 10
@@ -8,7 +10,7 @@ import java.util.*;
  *** @removeEvenNumbersFromList() - method returns list with odd numbers only
  *** @removeOddNumbersFromList() - method returns list with even numbers only
  *** @removeDuplicates() - method return SetOfNumbers based on given ListOfRandomNumbers (Set is always without duplicates)
-*/
+ */
 
 public class CollectionRunner {
 
@@ -20,12 +22,11 @@ public class CollectionRunner {
     static Random random = new Random();
 
     public static List<Integer> oddRandomNumbers() {
-        List<Integer> list = new ArrayList<>();
+        return IntStream.rangeClosed(0, 20).mapToObj(i -> random.nextInt(11)).collect(Collectors.toList());
+    }
 
-        for (int i = 0; i <= 20; i++) {
-            list.add(random.nextInt(10));
-        }
-        return list;
+    public static TreeSet<Integer> oddRandomNumbersToTreeSet() {
+        return IntStream.rangeClosed(0, 20).mapToObj(i -> random.nextInt(11)).collect(Collectors.toCollection(TreeSet::new));
     }
 
     public static void printList(List<?> list) {
@@ -43,11 +44,8 @@ public class CollectionRunner {
     }
 
     public static Set<Integer> removeDuplicatesFromList(List<Integer> listOfNumbers) {
-        Set<Integer> setWithoutDuplicates = new HashSet<>(listOfNumbers);
-        return setWithoutDuplicates;
+        return new HashSet<>(listOfNumbers);
     }
-
-
 
 
     public static void main(String[] args) {
@@ -73,6 +71,8 @@ public class CollectionRunner {
         b.add(1);
         b.add(2);
         System.out.println(a.equals(b));
-
+        System.out.println("\n");
+        TreeSet<Integer> treeSet = oddRandomNumbersToTreeSet();
+        System.out.println(treeSet);
     }
 }
