@@ -12,6 +12,11 @@ import java.util.*;
 
 public class CollectionRunner {
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     static Random random = new Random();
 
     public static List<Integer> oddRandomNumbers() {
@@ -43,14 +48,31 @@ public class CollectionRunner {
     }
 
 
+
+
     public static void main(String[] args) {
         List<Integer> listWithRandomValuesFrom0to10 = oddRandomNumbers();
         List<Integer> listWithRandomValuesFrom0To10_ex2 = oddRandomNumbers();
+
+
         printList(listWithRandomValuesFrom0to10);
         printList(listWithRandomValuesFrom0To10_ex2);
+
         System.out.println(removeEvenNumbersFromList(listWithRandomValuesFrom0to10)); //contains only odd numbers
         System.out.println(removeOddNumbersFromList(listWithRandomValuesFrom0To10_ex2)); //contains only even numbers
+
+        System.out.println(removeDuplicatesFromList(listWithRandomValuesFrom0to10));
         System.out.println(removeDuplicatesFromList(listWithRandomValuesFrom0To10_ex2));
+
+
+        List<Integer> a = new ArrayList<>();
+        a.add(1);
+        a.add(2);
+
+        List<Integer> b = new ArrayList<>();
+        b.add(1);
+        b.add(2);
+        System.out.println(a.equals(b));
 
     }
 }
