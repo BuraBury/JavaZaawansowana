@@ -31,8 +31,11 @@ public class Main {
             clinic.handlePatient();
             clinic.handlePatient();
             clinic.handlePatient();
+            clinic.handlePatient();
+            clinic.handlePatient();
+            clinic.handlePatient();
         } catch (NoSuchElementException e) {
-            System.out.println("Brak kolejnego pacjenta w kolejce");
+            System.out.println("There's no one left in the queue");
         }
 
 

@@ -3,9 +3,8 @@ package com.burabury.generycznosc.clinic;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
-public class Clinic {
-   protected final VisitsHistory visitsHistory = new VisitsHistory();
+class Clinic {
+    final VisitsHistory visitsHistory = new VisitsHistory();
 
     private final Queue<String> queue;
 
@@ -13,17 +12,17 @@ public class Clinic {
         queue = new LinkedList<>();
     }
 
-    protected void registerPatient(String name) {
+    void registerPatient(String name) {
         queue.add(name);
     }
 
-    protected String priorityPatientToHandle(String name) {
+    String priorityPatientToHandle(String name) {
         queue.remove(name);
         visitsHistory.addToFiles(name);
         return name;
     }
 
-    protected String handlePatient() {
+    String handlePatient() {
         String name = queue.element();
         queue.remove(name);
         visitsHistory.addToFiles(name);
