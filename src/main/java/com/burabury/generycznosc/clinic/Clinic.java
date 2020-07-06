@@ -1,43 +1,40 @@
 package com.burabury.generycznosc.clinic;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class Clinic {
 
     private final Queue<String> queue;
 
-    public Clinic(Queue<String> queue) {
-        this.queue = queue;
+    public Clinic() {
+        queue = new LinkedList<>();
     }
 
-    private Queue<String> getQueue() {
+    public Queue<String> registerPatient(String name) {
+        queue.add(name);
         return queue;
     }
 
-    public static Queue<String> registerPatient(Clinic clinic, String name) {
-        clinic.getQueue().add(name);
-        return clinic.getQueue();
-    }
-
-    public static String priorityPatientToHandle(Clinic clinic, String name) {
-        clinic.getQueue().remove(name);
+    public String priorityPatientToHandle(String name) {
+        queue.remove(name);
         return name + " - really sick patient. PRIORITY";
     }
 
-    public static String handlePatient(Clinic clinic) {
-        String name = clinic.getQueue().element();
-        clinic.getQueue().remove(name);
+    public String handlePatient() {
+        String name = queue.element();
+        queue.remove(name);
         return name + " - patient is now in the Doc office";
     }
 
-    public static void showQueueSize(Clinic clinic) {
-        int size = clinic.getQueue().size();
+    public void showQueueSize() {
+        int size = queue.size();
         System.out.println("\nSize of queue: " + size);
     }
 
-    public static void showQueueMembers(Clinic clinic) {
+    public void showQueueMembers() {
         System.out.println("\nPatients in queue: ");
-        System.out.println(clinic.getQueue());
+        System.out.println(queue);
     }
 
 }
