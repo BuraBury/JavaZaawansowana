@@ -14,12 +14,12 @@ class VisitsHistory {
         patients.add(name);
     }
 
-    private Queue<String> makeCopyOfPatients() {
+    private Queue<String> makeCopyOfPatientsData() {
         Queue<String> copy = patients;
         return copy;
     }
 
     public Queue<String> showHistory() {
-        return makeCopyOfPatients();
+        return makeCopyOfPatientsData();
     }
 }
