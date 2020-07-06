@@ -37,6 +37,7 @@ public class Clinic {
         System.out.println(queue);
     }
 
+
 }
 
 

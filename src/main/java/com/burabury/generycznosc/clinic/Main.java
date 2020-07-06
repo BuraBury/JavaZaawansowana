@@ -1,10 +1,5 @@
 package com.burabury.generycznosc.clinic;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-import static com.burabury.generycznosc.clinic.Clinic.*;
-
 /*
  * @registerPatient() - this method will add new element (String type) to the Queue
  * @priorityPatientToHandle() - this method get element (String type) from the Queue, no matter if it is the first one to get
@@ -36,6 +31,12 @@ public class Main {
 
         clinic.showQueueSize();
         clinic.showQueueMembers();
+
+
+
+        Visit visit = new Visit();
+
+
 
 
     }
