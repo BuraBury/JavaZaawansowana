@@ -9,14 +9,23 @@ package com.burabury.generycznosc.clinic;
  */
 
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
 
         Clinic clinic = new Clinic();
+        Visit visit = new Visit();
+
 
         clinic.registerPatient("Paulina");
+
+
         clinic.registerPatient("Jakub");
+
+
         clinic.registerPatient("Bercik");
         clinic.registerPatient("Paweł");
         clinic.registerPatient("Łukasz");
@@ -32,11 +41,7 @@ public class Main {
         clinic.showQueueSize();
         clinic.showQueueMembers();
 
-
-
-        Visit visit = new Visit();
-
-
+        clinic.visit.showHistory();
 
 
     }

@@ -3,7 +3,9 @@ package com.burabury.generycznosc.clinic;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
 public class Clinic {
+    Visit visit = new Visit();
 
     private final Queue<String> queue;
 
@@ -18,24 +20,31 @@ public class Clinic {
 
     public String priorityPatientToHandle(String name) {
         queue.remove(name);
-        return name + " - really sick patient. PRIORITY";
+        visit.addToFiles(name);
+        return name;
     }
 
     public String handlePatient() {
         String name = queue.element();
         queue.remove(name);
-        return name + " - patient is now in the Doc office";
+        visit.addToFiles(name);
+
+        return name;
     }
 
     public void showQueueSize() {
         int size = queue.size();
-        System.out.println("\nSize of queue: " + size);
+        System.out.printf("\n" +
+                "Size of queue: %d%n", size);
     }
 
     public void showQueueMembers() {
-        System.out.println("\nPatients in queue: ");
+        System.out.println("\n" +
+                "Patients in queue: ");
         System.out.println(queue);
     }
+
+
 
 
 }
