@@ -1,6 +1,5 @@
 package com.burabury.generycznosc.clinic;
 
-import java.util.Iterator;
 import java.util.Queue;
 
 public class Clinic {
@@ -11,7 +10,7 @@ public class Clinic {
         this.queue = queue;
     }
 
-    public Queue<String> getQueue() {
+    private Queue<String> getQueue() {
         return queue;
     }
 
