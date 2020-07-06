@@ -9,7 +9,11 @@ package com.burabury.generycznosc.clinic;
  */
 
 
+import lombok.val;
+
 import java.util.NoSuchElementException;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -18,18 +22,15 @@ public class Main {
 
 
         clinic.registerPatient("Paulina");
-        clinic.registerPatient("Jakub");
         clinic.registerPatient("Bercik");
         clinic.registerPatient("Paweł");
         clinic.registerPatient("Łukasz");
         clinic.registerPatient("Dyzio");
         clinic.registerPatient("Zyzio");
 
+
         try {
             clinic.priorityPatientToHandle("Dyzio");
-            clinic.handlePatient();
-            clinic.handlePatient();
-            clinic.handlePatient();
             clinic.handlePatient();
             clinic.handlePatient();
             clinic.handlePatient();
