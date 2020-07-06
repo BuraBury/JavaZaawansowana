@@ -26,11 +26,11 @@ public class Main {
         clinic.registerPatient("Zyzio");
 
         try {
-            System.out.println(clinic.priorityPatientToHandle("Dyzio"));
-            System.out.println(clinic.handlePatient());
-            System.out.println(clinic.handlePatient());
-            System.out.println(clinic.handlePatient());
-            System.out.println(clinic.handlePatient());
+            clinic.priorityPatientToHandle("Dyzio");
+            clinic.handlePatient();
+            clinic.handlePatient();
+            clinic.handlePatient();
+            clinic.handlePatient();
         } catch (NoSuchElementException e) {
             System.out.println("Brak kolejnego pacjenta w kolejce");
         }

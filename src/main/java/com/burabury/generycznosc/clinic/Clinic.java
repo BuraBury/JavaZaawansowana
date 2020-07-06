@@ -13,17 +13,17 @@ public class Clinic {
         queue = new LinkedList<>();
     }
 
-    public void registerPatient(String name) {
+    protected void registerPatient(String name) {
         queue.add(name);
     }
 
-    public String priorityPatientToHandle(String name) {
+    protected String priorityPatientToHandle(String name) {
         queue.remove(name);
         visitsHistory.addToFiles(name);
         return name;
     }
 
-    public String handlePatient() {
+    protected String handlePatient() {
         String name = queue.element();
         queue.remove(name);
         visitsHistory.addToFiles(name);
