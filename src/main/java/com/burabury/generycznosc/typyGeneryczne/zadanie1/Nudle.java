@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.zadanie1;
+package com.burabury.generycznosc.typyGeneryczne.zadanie1;
 
 class Nudle extends Food {
 

@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.zadanie2;
+package com.burabury.generycznosc.typyGeneryczne.zadanie2;
 
 public class FiveElements<FIRST, SECOND, THIRD, FOURTH, FIFTH> {
     private final Pair<FIRST, SECOND> pair;

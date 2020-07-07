@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.zadanie1;
+package com.burabury.generycznosc.typyGeneryczne.zadanie1;
 
 public class Main {
     public static void main(String[] args) {

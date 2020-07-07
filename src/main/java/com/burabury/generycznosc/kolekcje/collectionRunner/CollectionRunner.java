@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.zadanie3;
+package com.burabury.generycznosc.kolekcje.collectionRunner;
 
 import java.util.*;
 import java.util.stream.Collectors;

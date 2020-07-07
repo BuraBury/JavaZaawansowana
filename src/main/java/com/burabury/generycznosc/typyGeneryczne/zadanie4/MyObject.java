@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.zadanie4;
+package com.burabury.generycznosc.typyGeneryczne.zadanie4;
 
 import java.util.*;
 

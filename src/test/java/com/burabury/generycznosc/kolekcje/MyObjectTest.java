@@ -1,5 +1,6 @@
-package com.burabury.generycznosc.kolekcje.zadanie4;
+package com.burabury.generycznosc.kolekcje;
 
+import com.burabury.generycznosc.typyGeneryczne.zadanie4.MyObject;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
