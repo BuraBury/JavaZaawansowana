@@ -1,13 +1,15 @@
 package com.burabury.generycznosc.kolekcje.sets.exercise3;
 
 
+import com.sun.source.tree.Tree;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Exercise3 {
 
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
         Product comic = new Product("Tytus Romek i Atomek", 20, Category.BOOK);
         Product comic2 = new Product("Tytus Romek i Atomek", 30, Category.BOOK);
         Product laptop = new Product("Lenovo Legion", 3000, Category.ELECTRONICS);
@@ -22,10 +24,9 @@ public class Exercise3 {
         productSet.add(album);
 
 
-
         PriceProductComparator priceProductComparator = new PriceProductComparator();
-        Set<Product> productsSetByComparator = new TreeSet<>(new PriceProductComparator());
 
+        TreeSet<Product> productsSetByComparator = new TreeSet<>(new PriceProductComparator());
         productsSetByComparator.add(comic);
         productsSetByComparator.add(comic2);
         productsSetByComparator.add(laptop);
@@ -33,15 +34,16 @@ public class Exercise3 {
         productsSetByComparator.add(album);
 
         System.out.println(comic.equals(comic2));
+        System.out.println(priceProductComparator.compare(laptop2, laptop));
         System.out.println(priceProductComparator.compare(laptop, laptop2));
+        System.out.println();
 
+        System.out.println((productsSetByComparator.first()));
+        System.out.println((productsSetByComparator.last()));
+        System.out.println();
 
-        System.out.println((((TreeSet<Product>) productsSetByComparator).first()));
-        System.out.println((((TreeSet<Product>) productsSetByComparator).last()));
-
-
-
-
+        System.out.println(productSet);
+        System.out.println(productsSetByComparator);
 
 
     }
