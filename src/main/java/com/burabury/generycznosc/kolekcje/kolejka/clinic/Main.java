@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.clinic;
+package com.burabury.generycznosc.kolekcje.kolejka.clinic;
 
 /*
  * @registerPatient() - this method will add new element (String type) to the Queue

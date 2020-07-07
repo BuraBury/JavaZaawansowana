@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.clinic;
+package com.burabury.generycznosc.kolekcje.kolejka.clinic;
 
 import java.util.LinkedList;
 import java.util.Queue;
