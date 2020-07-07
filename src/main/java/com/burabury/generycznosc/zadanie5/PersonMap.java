@@ -14,6 +14,8 @@ public class PersonMap {
         personMap.put(4L, "Jan");
         personMap.put(5L, "Jan");
 
+        personMap.remove(1L);
+
 
         for (String s : personMap.values()) {
             if (s.startsWith("A")) {

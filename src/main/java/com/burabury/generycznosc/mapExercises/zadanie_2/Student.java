@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.student;
+package com.burabury.generycznosc.mapExercises.zadanie_2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ public class Student {
     private final String firstName;
     private final String lastName;
     private final String mainLanguage;
-    public List<Integer> grades;
+    private final List<Double> grades;
 
     public Student(String firstName, String lastName, String mainLanguage) {
         this.firstName = firstName;
@@ -16,7 +16,7 @@ public class Student {
         grades = new ArrayList<>();
     }
 
-    public List<Integer> addGrade(Integer grade) {
+    public List<Double> addGrade(Double grade) {
         if (grade >= 1 && grade <= 6) {
             grades.add(grade);
         } else {
@@ -27,6 +27,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName + " " + mainLanguage;
+        return "\n" + firstName + " " + lastName + " " + mainLanguage;
+    }
+
+    public List<Double> getGrades() {
+        return grades;
     }
 }
