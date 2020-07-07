@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.sets;
+package com.burabury.generycznosc.kolekcje.set;
 
 import java.util.HashSet;
 import java.util.Objects;

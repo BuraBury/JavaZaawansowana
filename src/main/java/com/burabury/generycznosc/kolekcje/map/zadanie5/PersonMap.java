@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.mapy.zadanie5;
+package com.burabury.generycznosc.kolekcje.map.zadanie5;
 
 import java.util.HashMap;
 import java.util.Map;

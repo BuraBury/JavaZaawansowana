@@ -1,7 +1,5 @@
-package com.burabury.generycznosc.kolekcje.sets.exercise3;
+package com.burabury.generycznosc.kolekcje.set.exercise3;
 
-
-import com.sun.source.tree.Tree;
 
 import java.util.HashSet;
 import java.util.Set;

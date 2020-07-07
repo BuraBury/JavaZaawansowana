@@ -1,10 +1,10 @@
-package com.burabury.generycznosc.kolekcje.mapy.zadanie_2;
+package com.burabury.generycznosc.kolekcje.map.zadanie_2;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.burabury.generycznosc.kolekcje.mapy.zadanie_2.StudentService.*;
+import static com.burabury.generycznosc.kolekcje.map.zadanie_2.StudentService.*;
 
 public class Main {
     public static void main(String[] args) {

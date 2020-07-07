@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.sets.exercise3;
+package com.burabury.generycznosc.kolekcje.set.exercise3;
 
 import java.util.Comparator;
 import java.util.TreeSet;

@@ -1,4 +1,4 @@
-package com.burabury.generycznosc.kolekcje.kolejka.zadanie1;
+package com.burabury.generycznosc.kolekcje.queue;
 
 import java.util.ArrayDeque;
 import java.util.NoSuchElementException;
