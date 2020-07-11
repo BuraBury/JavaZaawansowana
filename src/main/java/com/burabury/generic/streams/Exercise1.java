@@ -33,7 +33,8 @@ public class Exercise1 {
 
         Stream<String> stream = list.stream();
 
-        Set<String> collect = stream.filter(element -> element.length() > 5)
+        Set<String> collect = stream
+                .filter(element -> element.length() > 5)
                 .map(String::toUpperCase)
 //              .map(element -> element.toUpperCase())
                 .collect(Collectors.toSet());
